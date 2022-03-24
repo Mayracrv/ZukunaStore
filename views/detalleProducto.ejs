@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('./partials/head', {title: 'product detail'}) %> 
+
+<body class="body-product-detail">
+  <%- include('./partials/header') %> 
+
+
+  <main>
+    <section> 
+     <div class="">
+          <h3><%= product.name %></h3> 
+      </div>
+      <div class="product">
+        <div class="img-teclado"><img src="/images/products/<%=product.image %> " alt="" width="100%"></div>
+        <div class="adapt">
+          <div class="price">
+            <p>$<%=product.price%></p>
+          </div>
+
+          <p><%= product.description %></p>
+    
+         
+          <div>
+            <p>Precio en cuotas sin interés con las siguientes tarjetas</p>
+          </div>
+          <div class="cards">
+            <img src="/images/visa-logo.jpg" alt="">
+            <img src="/images/mastercard-logo.jpg" alt="">
+          </div>
+          <div>
+            <ul>
+              <div class="icon-caracteristicas">
+                <i class="fas fa-check-circle"></i>
+                <p>Hay stock</p>
+              </div>
+              <div class="icon-caracteristicas">
+                <i class="fas fa-store"></i>
+                <p>Retiro ¡GRATIS! por la sucursal</p>
+              </div>
+              <div class="icon-caracteristicas">
+                <i class="fas fa-truck"></i>
+                <p>Envios a todo el país</p>
+              </div>
+              <div class="icon-caracteristicas">
+                <i class="fas fa-shield-alt"></i>
+                <p>Garantia 30 días</p>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="botones">
+        <button>Comprar ahora</button>
+        <button>Agregar al carrito<i class="fas fa-shopping-cart"></i></button>
+      </div>
+      <div class="especificaciones-product">
+       
+        
+        
+       
+      
+    </section>
+  </main>
+  <%- include('./partials/footer') %> 
+</body>
+
+</html>

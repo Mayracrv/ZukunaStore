@@ -1,0 +1,206 @@
+header{
+    background-color: #702286
+;
+    width:100%;
+    padding: 10px;
+}
+
+ header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .carrito-login i{
+    text-decoration: none;
+    color: grey;
+}
+
+header a{
+    text-decoration: none;
+    color: white
+}
+
+ header nav .busqueda {
+    display: flex;
+    width: 25%;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+ header nav .logo {
+    width: 30%;
+    
+}
+
+ header nav .logo img{
+    width: 100%;
+        color: white;
+
+}
+ header nav .busqueda input {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 2px
+}
+
+ header nav .carrito-login {
+    display: flex;
+    font-size: 25px;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+
+header nav .enlaces .ingresar, .registrarse{
+    display: none;
+    
+}
+
+header nav .enlaces{
+    display: none;
+}
+
+ header nav .box-form {
+    display: none;
+}
+
+
+
+
+/* tablet */
+@media (min-width: 769px) {
+   /*  header */
+ header{
+        width:100%;
+    }
+ header nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    
+    }
+    header nav .enlaces{
+        width: 31%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 71px;
+        
+    
+    }
+ header nav .bars {
+        padding-top: 50px ;
+        font-size: 45px;
+        margin-left: -30px;
+        
+    }
+ header nav .busqueda {
+        display: flex;
+        width: 27%;
+        border-radius: 15px;
+        padding-top: 45px;
+        margin-left: -30px;
+    }
+ header nav .busqueda form{
+        width: 100%;
+    }
+ header nav .logo {
+        width: 25%;
+        margin: 0px 0px 0 -28px;
+        
+    }
+    
+ header nav .logo img{
+        width: 100%;
+        padding: 5px;
+
+    }
+ header nav .busqueda input {
+        width: 100%;
+        
+    }
+ header nav .carrito-login {
+        display: flex;
+        width: 9%;
+        font-size: 45px;
+        margin: 50px 30px 0px 0px;
+    }
+    header nav .admin{
+        margin: 70px 0 -17px 0;
+        font-size: 23px;
+    
+    }
+    header nav .enlaces .users .ingresar, .registrarse{
+        display: none;
+
+    }
+    
+    header nav .enlaces{
+    display: none;
+    }
+    
+    
+ header nav .box-form {
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+ header nav .box-form a{
+        color: white;
+        padding-left:5px ;
+
+    }
+}
+
+
+
+
+/* desktop */
+@media (min-width:1024px) {
+header div.bars{
+        display: none;
+    }
+    header nav .bars {
+        padding-top: 65px ;
+        font-size: 30px;
+    }
+    header nav .logo {
+        width: 25%;
+       
+        
+    }
+    header nav .enlaces .ingresar, .registrarse{
+        display: flex;
+    }
+ header nav .enlaces {
+        width: 35%;
+        display: flex;
+        font-size: 25px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+ header nav .enlaces .registrarse a{
+        margin-left: 90px;
+        color: white;
+        font-weight: lighter;
+    }
+
+ header nav .enlaces .ingresar a{
+        color: white;        
+    }
+ header nav .carrito-login {
+        display: none;
+    
+    }
+ header nav .busqueda {
+        width: 23%;
+        padding-top: 78px;
+        
+    }
+
+
+    
+
+
+}
